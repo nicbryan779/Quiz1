@@ -63,11 +63,10 @@
               if($pass=== $row["password"])
               {
                 header('Location: home.php');
-                echo "LAL";
               }
               else
               {
-                echo("<script>alert($message);</script>");
+                echo("<script>alert('LoginFailed');</script>");
               }
             }
             if($row["role"]==="driver")
